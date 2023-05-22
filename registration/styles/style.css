@@ -1,0 +1,123 @@
+@import url(../../header-common.css);
+
+:root {
+  --main-dark-color: rgba(37, 37, 37, 1);
+  --main-color: rgb(218, 150, 134);
+  --main-white-color: rgba(255, 255, 255, 1);
+}
+
+/*подулючаем стиль с хедером и футером*/
+main {
+  font-family: 'Raleway';
+}
+
+/*форма регитсрации*/
+.registration_container {
+  max-width: 1200px;
+  width: 80%;
+  margin: auto;
+}
+
+
+.registration_container {
+  max-width: 600px;
+  position: relative;
+}
+
+.registration {
+  position: relative;
+  max-width: 100%;
+  border: solid 1px black;
+  margin: auto;
+  padding: 30px;
+  z-index: 3;
+  transition: ease 1s;
+}
+
+.registration_form {
+  position: relative;
+  max-width: 700px;
+  margin: auto;
+  border-radius: 15px;
+  padding: 20px;
+  z-index: 100;
+}
+
+.registration .title {
+  /*стиль для названия*/
+  font-size: 20px;
+  text-align: center;
+  line-height: 30px;
+  position: relative;
+}
+
+/*ввод*/
+.user-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.user-details .input-box {
+  margin: 15px auto;
+  width: calc(100% / 2 - 25px);
+}
+
+.user-details .input-box input {
+  width: 100%;
+  height: 45px;
+  border: 1px solid black;
+  padding: 3px;
+  transition: all 0.3s ease;
+}
+
+.user-details .input-box input:focus {
+  border-color: var(--main-color);
+}
+
+form .button {
+  height: 45px;
+  width: 95%;
+  margin: auto;
+  margin-top: 15px;
+}
+
+form .button input {
+  height: 100%;
+  width: 100%;
+  font-weight: 300;
+  font-size: 16px;
+  color: white;
+  background-color: var(--main-color);
+  background-size: 400% 400%;
+  animation: gradient 20s ease infinite;
+}
+
+form .button input:active {
+  opacity: 90%;
+}
+
+.input-box {
+  position: relative;
+}
+
+.show-password {
+  position: absolute;
+  right: 10px;
+  top:25px;
+  font-size: 20px;
+  background-color: transparent;
+  color: var(--main-color);
+}
+
+.login-page {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 12px;
+}
+
+.user-details .input-box {
+  margin-bottom: 0px;
+  width: calc(100% - 20px);
+}

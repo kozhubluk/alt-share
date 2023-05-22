@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Авторизация</title> <!-- название станицы -->
+    <link rel="icon" href="./favicon.ico"> <!-- фавиконка -->
+    <link rel="stylesheet" href="./null-style.css">
+    <link rel="stylesheet" href="./registration/styles/style.css">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-container">
+                <div class="left-container">
+                    <a href="index.html">Главная</a>
+                    <a href="catalog.html">Каталог</a>
+                </div>
+                <div class="logo-container">
+                    ALT+SHARE
+                </div>
+                <div class="right-container">
+                    <a href="./cart.html"><img class="cart-icon" src="./img/cart.svg"></a>
+                    <a href="./account.html"><img class="account-icon" src="./img/account.svg"></a>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="main_container">
+
+                <div class="registration_block">
+
+                    <div class="registration_container">
+
+                        <div class="registration">
+
+                            <div class="title">Авторизация</div>
+                            <div class="redistration_form">
+                                <form action="#" class=>
+                                    <div class="user-details">
+                                        <div class="input-box">
+                                            <span class="details">Логин</span>
+                                            <input type="text" id="login" placeholder="Введите свое имя" required>
+                                        </div>
+                                        <div class="input-box">
+                                            <span class="details">Пароль</span>
+                                            <input type="password" id="password" placeholder="Введите пароль" required>
+                                            <button type="button" class="show-password" onclick="myFunction()">
+                                                <i class="fa-regular fa-eye"></i> 
+                                            </button>
+                                        </div>
+
+                                        <a href="./registration.html" class="login-page">Еще не зарегистрированы?</a>
+
+                                        <div class="button">
+                                            <input type="submit" value="Зарегистрироваться">
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+        <footer class="footer">
+
+        </footer>
+
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("password");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+    </script>
+</body>
+
+</html>

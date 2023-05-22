@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Товар</title> <!-- название станицы -->
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="null-style.css">
+    <link rel="stylesheet" href="product/styles/style.css">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body>
+
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-container">
+                <div class="left-container">
+                    <a href="index.html">Главная</a>
+                    <a href="catalog.html">Каталог</a>
+                </div>
+                <div class="logo-container">
+                    ALT+SHARE
+                </div>
+                <div class="right-container">
+                    <a href="./cart.html"><img class="cart-icon" src="./img/cart.svg"></a>
+                    <a href="./account.html"><img class="account-icon" src="./img/account.svg"></a>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="product-wrapper">
+                <div class="product-container">
+                    <div class="product-img">
+
+                        <img src="./product/img/product-photo1.jpg">
+                    </div>
+                    <div class="product-details-wrapper">
+                        <div class="main-info">
+                            <a href="./product.html" class="product-name">
+                                Хайповый весенний плащ
+                            </a>
+                            <div class="product-price">
+                                <span class="price">323</span><span> руб</span>
+                            </div>
+                        </div>
+                        <div class="accordions">
+                            <div class="accordion">
+                                <input type="checkbox" id="first" />
+                                <label for="first" class="accordion_label">Описание</label>
+                                <div class="accordion_content">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, culpa. Libero ist
+                                    enim id necessitatibus dicta adipisci asperiores! Corporis necessitatibus, alias
+                                    assumenda magnam quidem unde iusto doloremque sunt.
+                                </div>
+                            </div>
+
+                            <div class="accordion">
+                                <input type="checkbox" id="second" />
+                                <label for="second" class="accordion_label">Контакты продавца</label>
+                                <div class="accordion_content">
+                                    Алла Алекперова, 88005553535
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <button class="add-to-cart">
+                                В корзину
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        <footer class="footer">
+
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

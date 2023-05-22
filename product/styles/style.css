@@ -1,0 +1,133 @@
+@import url(../../header-common.css);
+
+:root {
+  --main-dark-color: rgba(37, 37, 37, 1);
+  --main-color: rgb(218, 150, 134);
+  --main-white-color: rgba(255, 255, 255, 1);
+}
+
+main {
+  padding-bottom: 10px;
+}
+
+* {
+  font-family: 'Raleway';
+  font-size: 16px;
+  font-weight: 300;
+}
+
+a, a:visited, a:hover, a:active {
+  color: var(--main-dark-color);
+}
+ 
+
+.accordion {
+  width: 100%;
+  overflow: hidden;
+}
+
+.accordion_label {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  font-weight: bolder;
+  border-bottom: 1px solid;
+  cursor: pointer;
+}
+
+.accordion_label::after {
+  /*стрелка*/
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f107";
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  transition: all 0.4s ease;
+}
+ 
+.accordion_content {
+  max-height: 0;
+  font-weight: 200;
+  transition: all 0.4s ease;
+}
+
+.accordion input {
+  position: absolute;
+  /*скрываем чекбокс*/
+  opacity: 0;
+  z-index: -1;
+}
+
+.accordion input:checked+.accordion_label::after {
+  transform: rotate(-90deg);
+  /*анимация стрелки*/
+}
+
+.accordion input:checked~.accordion_content {
+  max-height: 100vh;
+  padding: 1em;
+}
+
+.product-container{
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  gap: 65px;
+  position: relative;
+}
+.product-img{
+  flex-basis: 40%;
+  max-height: 650px;
+  overflow: hidden;
+}
+.product-img>img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.product-details-wrapper {
+  flex-basis: 60%;
+  display: flex;
+  flex-direction: column;
+ 
+ 
+}
+.main-info a{
+  display: block;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.price, .price~span{
+  font-weight: 700;
+}
+.accordions {
+  flex-basis: 100%;
+  margin-top: 5px;
+}
+.add-to-cart{
+  width: 100%;
+  color: var(--main-white-color);
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  justify-content: center;
+  font-weight: bolder;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .product-container{
+    flex-direction: column;
+  }
+  .add-to-cart{
+    margin-top: 10px;
+  }
+  .product-img{
+    flex-basis: 40%;
+    max-height: 500px;
+    overflow: hidden;
+  }
+}

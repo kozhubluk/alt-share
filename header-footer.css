@@ -1,0 +1,112 @@
+/* подключение шрифтов */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
+
+/*основные цвета сайта*/
+ 
+div {
+    font-size: 30pt;
+}
+.header-background {
+    position: relative;
+    height: 550px;
+    background-color: var(--main-dark-color);
+    width: 100%;
+}
+.header-backgroung-photos {
+    height: 100%;
+    display: flex;
+}
+.back-photo {
+    width: calc(100%/3);
+    height: 100%;
+}
+.back-photo-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-photo img {
+    width: 100%;
+    opacity: 68%;
+    transition: .4s;
+    display: block;
+}
+
+.back-photo:hover img {
+    opacity: 95%;
+}
+
+.menu-line {
+    z-index: 100;
+    color: var(--main-white-color);
+}
+
+.title-container {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    text-align: center;
+    top: 14px;
+}
+
+.title{
+    font-weight: 500;
+    font-size: 64px;
+}
+
+.des-container {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    text-align: center;
+    top: 30%;
+}
+
+.des-line {
+    background-color: var(--main-white-color);
+    width: 120px;
+    height: 1px;
+    margin: auto;
+    margin-bottom: 18px;
+    margin-top: 17px;
+}
+.des-title {
+    font-family: Raleway;
+    font-size: 46px;
+    font-weight: 400;
+    line-height: 54px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.des-text {
+    color: var(--main-white-color);
+    display: block;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    transition: .3s;
+    text-align: center;
+}
+.des-text:visited {
+    color: var(--main-white-color);
+}
+.des-text:hover {
+    font-size: 16.3px;
+    transition: .3s;
+}
+.nav{
+    z-index: 344;
+}
+@media (max-width:2540px){
+    .back-photo img {
+        height: 100%;
+        width: auto;
+    }
+}
+ 

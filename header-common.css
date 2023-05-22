@@ -1,0 +1,150 @@
+/* подключение шрифтов */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
+
+@import url(../../header-footer.css);
+
+/*основные цвета сайта*/
+:root {
+    --main-dark-color: rgba(37, 37, 37, 1);
+    --main-color: rgb(218, 150, 134);
+    --main-white-color: rgba(255, 255, 255, 1);
+}
+
+a {
+    color: var(--main-dark-color);
+}
+
+a:hover {
+    color: var(--main-dark-color);
+}
+
+a:active {
+    color: var(--main-dark-color);
+}
+
+a:visited {
+    color: var(--main-dark-color);
+}
+
+.header {
+    height: 85px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center
+}
+
+.main {
+    width: 80%;
+    margin: auto;
+}
+
+.header-container {
+    width: 80%;
+    margin: auto;
+    vertical-align: middle;
+    display: flex;
+    color: var(--main-dark-color);
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 300;
+    align-items: center;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.left-container {
+    flex-basis: 25%;
+    display: flex;
+    column-gap: 30px;
+    flex-basis: 25%;
+}
+
+.left-container>a {
+    color: var(--main-dark-color);
+}
+
+.left-container>a:hover {
+    color: var(--main-dark-color);
+}
+
+.left-container>a:visited {
+    color: var(--main-dark-color);
+}
+
+.left-container>a:active {
+    color: var(--main-dark-color);
+}
+
+.logo-container {
+    color: var(--main-color);
+    font-size: 40px;
+    font-weight: 500;
+    flex-basis: 50%;
+    line-height: 75px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.right-container {
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 30px;
+    flex-basis: 25%;
+
+}
+
+button:hover {
+    -webkit-filter: brightness(110%);
+    filter: brightness(110%);
+}
+
+button:active {
+    -webkit-filter: brightness(99%);
+    filter: brightness(99%);
+}
+
+@media (max-width:700px) {
+    .header-container {
+        justify-content: space-between;
+        width: calc(100% - 50px);
+        position: relative;
+    }
+
+    .main {
+        width: calc(100% - 50px);
+    }
+
+    .left-container {
+        column-gap: 10px;
+    }
+}
+
+@media (max-width:600px) {
+    .header {
+        margin-top: 40px;
+    }
+
+    .header-container>div {
+        column-gap: 40px;
+    }
+
+    .header-container {
+        justify-content: space-between;
+        width: calc(100% - 30px);
+        position: relative;
+    }
+
+    .main {
+        width: calc(100% - 30px);
+    }
+
+    .logo-container {
+        position: absolute;
+        top: -70px;
+        margin: auto;
+        width: 100%;
+    }
+}
