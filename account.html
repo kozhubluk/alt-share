@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Мой профиль</title> <!-- название станицы -->
+    <link rel="icon" href="favicon.ico"> <!-- фавиконка -->
+    <link rel="stylesheet" href="null-style.css">
+    <link rel="stylesheet" href="account/style/style.css">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-container">
+                <div class="left-container">
+                    <a href="index.html">Главная</a>
+                    <a href="catalog.html">Каталог</a>
+                </div>
+                <div class="logo-container">
+                    ALT+SHARE
+                </div>
+                <div class="right-container">
+                    <a href="./cart.html"><img class="cart-icon" src="./img/cart.svg"></a>
+                    <a href="./account.html"><img class="account-icon" src="./img/account.svg"></a>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="saler-info">
+                <div class="saler-name">
+                    Вы авторизованы как: <span id="saler-name">Натуся</span>
+                </div>
+                <div class="saler-tel">
+                    Ваш номер телефона: <a href="tel:+74951234567" id="saler-tel">+7(999)234 12-12</a>
+                </div>
+                <div class="functions">
+                    <a href="./add-product.html" class="add-item">Добавить товар</a>
+                    <button class="logout-button">Выйти</button>
+                </div>
+
+            </div>
+            <div class="tabs">
+                <input type="radio" name="tabs" id="tabone" checked="checked">
+                <label for="tabone">Товары</label>
+                <div class="tab">
+                    <div class="products-wrapper">
+                        <div class="products-container">
+                            <div class="product-item">
+                                <div class="product-background">
+                                    <button class="remove"> <i class="fa-regular fa-trash-can"></i></button>
+                                    <img src="./catalog/img/baikal.png">
+                                </div>
+                                <div class="product-text">
+                                    <a href="./product.html" class="product-name">
+                                        Pink Floyd. The Dark Side Of The Moon
+                                    </a>
+                                    <div class="product-price">
+                                        <span class="price">323</span><span> руб</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-item">
+                                <div class="product-background">
+                                    <button class="remove"> <i class="fa-regular fa-trash-can"></i></button>
+                                    <img src="./catalog/img/baikal.png">
+                                </div>
+                                <div class="product-text">
+                                    <a href="./product.html" class="product-name">
+                                        Lorem ipsum dolor sit.
+                                    </a>
+                                    <div class="product-price">
+                                        <span class="price">323</span><span> руб</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-item">
+                                <div class="product-background">
+                                    <button class="remove"> <i class="fa-regular fa-trash-can"></i></button>
+                                    <img src="./catalog/img/baikal.png">
+                                </div>
+                                <div class="product-text">
+                                    <a href="./product.html" class="product-name">
+                                        Lorem, ipsum dolor.
+                                    </a>
+                                    <div class="product-price">
+                                        <span class="price">123</span><span> руб</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <input type="radio" name="tabs" id="tabtwo">
+                <label for="tabtwo">Отзывы</label>
+                <div class="tab">
+                    <div class="review-list-container">
+                        <div class="review-title">Вам оставили отзывы:</div>
+                        <div class="review-list">
+                            <div class="review-item">
+                                <div class="review-author">
+                                    Виктор Корнеплод
+                                </div>
+                                <div class="review-text">
+                                    Товар высокого качества,отлично упакован,быстро отправлен,предельно конкретный и
+                                    ответственный продавец.
+                                </div>
+                            </div>
+                            <div class="review-item">
+                                <div class="review-author">
+                                    Алла
+                                </div>
+                                <div class="review-text">
+                                    Здравствуйте,заказала кроссовки,продавец быстро вышел на связь,на все вопросы по
+                                    товару и доставке ответил. Обувь получила. Заказ оформляла в первый раз и
+                                    всё прошло гладко.Очень довольна покупкой и продавцом.Рекомендую.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        <footer class="footer">
+
+        </footer>
+
+    </div>
+    <script src="./account/scripts/remove.js"></script>
+</body>
+
+</html>

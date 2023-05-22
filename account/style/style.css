@@ -1,0 +1,231 @@
+@import url(../../header-common.css);
+
+:root {
+    --main-dark-color: rgba(37, 37, 37, 1);
+    --main-color: rgb(218, 150, 134);
+    --main-white-color: rgba(255, 255, 255, 1);
+}
+
+.main {
+    font-family: 'Raleway';
+    font-size: 16px;
+    font-weight: 300;
+    padding-bottom: 15px;
+}
+
+.saler-info {
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.saler-info span,
+.saler-info a {
+    font-weight: 400;
+    line-height: 1.5em;
+}
+
+.tabs {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.tabs label {
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+    display: block;
+
+    padding: 1rem 2rem;
+    cursor: pointer;
+    background-color: var(--main-white-color);
+    color: var(--main-dark-color);
+    -webkit-transition: background ease 0.2s;
+    transition: background ease 0.2s;
+}
+
+.tabs .tab {
+    -webkit-box-ordinal-group: 100;
+    -webkit-order: 99;
+    -ms-flex-order: 99;
+    order: 99;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+
+    width: 100%;
+    display: none;
+    padding-top: 10px;
+}
+
+.tabs input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+}
+
+.products-wrapper {
+    flex-basis: 80%;
+}
+
+.products-container {
+    display: flex;
+    position: relative;
+    row-gap: 20px;
+    column-gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    position: relative;
+    width: calc(100%/4 - 20px);
+    height: 442px;
+}
+
+.product-price>span {
+    font-weight: 700;
+}
+
+.product-background {
+    width: 100%;
+    height: 360px;
+    position: relative;
+}
+
+.remove {
+    background-color: var(--main-color);
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 20px;
+    color: var(--main-white-color);
+    border-radius: 0px 0px 0px 50%;
+    transition: .2s;
+}
+
+.product-background>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-text {
+    height: 15%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tabs input[type="radio"]:checked+label {
+    background: var(--main-color);
+    color: var(--main-white-color);
+}
+
+.tabs input[type="radio"]:checked+label+.tab {
+    display: block;
+}
+ 
+.review-list-container {
+    width: 100%;
+    line-height: 1.5em;
+}
+
+.review-title {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.review-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.review-item {
+    width: calc(100%);
+    margin-top: 10px;
+    height: fit-content;
+    border-bottom: 1px solid black;
+    padding: 10px 5px;
+}
+
+.functions>a,
+.functions>button{
+    font-weight: 300;
+    border: 1px solid black;
+}
+
+.functions>a:hover,
+.functions>button:hover{
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+}
+
+.functions {
+    margin-top: 5px;
+    display: flex;
+    column-gap: 10px;
+}
+
+.review-author {
+    font-weight: 500;
+}
+
+.add-item{
+    display: block;
+    font-weight: 00;
+    font-size: 16px;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px;
+}
+
+.logout-button {
+    width: 80px;
+    font-weight: 300;
+    font-size: 16px;
+    height: 40px;
+    background-color: var(--main-white-color);
+}
+
+@media (min-width:1650px) {
+    .product-item {
+        width: calc(100%/5 - 20px);
+    }
+}
+
+@media (max-width:1000px) {
+    .product-item {
+        width: calc(100%/3 - 20px);
+    }
+}
+
+@media (max-width:650px) {
+    .product-item {
+        width: calc(100%/2 - 20px);
+    }
+}
+
+@media (max-width:450px) {
+    .product-item {
+        width: calc(100%/1 - 60px);
+    }
+
+    .catalog-wrapper {
+        flex-direction: column;
+    }
+
+    .products-container {
+        justify-content: center;
+    }
+}

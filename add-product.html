@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Добавить товар</title> <!-- название станицы -->
+    <link rel="icon" href="./favicon.ico"> <!-- фавиконка -->
+    <link rel="stylesheet" href="./null-style.css">
+    <link rel="stylesheet" href="./add-product/style/style.css">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-container">
+                <div class="left-container">
+                    <a href="index.html">Главная</a>
+                    <a href="catalog.html">Каталог</a>
+                </div>
+                <div class="logo-container">
+                    ALT+SHARE
+                </div>
+                <div class="right-container">
+                    <a href="./cart.html"><img class="cart-icon" src="./img/cart.svg"></a>
+                    <a href="./account.html"><img class="account-icon" src="./img/account.svg"></a>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="main_container">
+
+                <div class="form_block">
+
+                    <div class="form_container">
+
+                        <div class="form">
+
+                            <div class="title">Новый товар</div>
+                            <div class="product_form">
+                                <form action="#" class=>
+                                    <div class="user-details">
+                                        <div class="input-box">
+                                            <span class="details">Название</span>
+                                            <input type="text" id="title" placeholder="Введите название товара"
+                                                required>
+                                        </div>
+                                        <div class="input-box">
+                                            <span class="details">Цена</span>
+                                            <input type="number" id="price" min="0"
+                                                placeholder="Введите цену товара в рублях" required>
+                                        </div>
+                                        <div class="input-box">
+                                            <span class="details">Описание</span>
+                                            <textarea rows="5" required id="description"
+                                                placeholder="Ввыедите описание товара" name="text"></textarea>
+
+                                        </div>
+                                        <div class="input-box">
+                                            <p>
+                                                <input type="radio" id="book" name="radio-group" checked>
+                                                <label for="book">Книга</label>
+                                            </p>
+                                            <p>
+                                                <input type="radio" id="shoes" name="radio-group">
+                                                <label for="shoes">Обувь</label>
+                                            </p>
+                                            <p>
+                                                <input type="radio" id="cloth" name="radio-group">
+                                                <label for="cloth">Одежда</label>
+                                            </p>
+                                            <p>
+                                                <input type="radio" id="music" name="radio-group">
+                                                <label for="music">Музыка</label>
+                                            </p>
+                                            <p>
+                                                <input type="radio" id="devices" name="radio-group">
+                                                <label for="devices">Техника</label>
+                                            </p>
+                                            <p>
+                                                <input type="radio" id="other" name="radio-group">
+                                                <label for="other">Другое</label>
+                                            </p>
+
+                                        </div>
+                                      
+
+                                        <div class="input-box">
+                                            <div class="input-file-container">
+                                                <input class="input-file" id="photo" type="file">
+                                                <label tabindex="0" for="my-file" class="input-file-trigger">Выберите
+                                                    файл</label>
+                                            </div>
+                                            <p class="file-return"></p>
+                                        </div>
+                                        <div class="button">
+                                            <input type="submit" value="Добавить">
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+        <footer class="footer">
+
+        </footer>
+
+    </div>
+    <script>
+        var fileInput = document.querySelector(".input-file"),
+            button = document.querySelector(".input-file-trigger"),
+            the_return = document.querySelector(".file-return");
+
+        button.addEventListener("keydown", function (event) {
+            if (event.keyCode == 13 || event.keyCode == 32) {
+                fileInput.focus();
+            }
+        });
+        button.addEventListener("click", function (event) {
+            fileInput.focus();
+            return false;
+        });
+        fileInput.addEventListener("change", function (event) {
+            the_return.innerHTML = this.value;
+        });  
+    </script>
+</body>
+
+</html>

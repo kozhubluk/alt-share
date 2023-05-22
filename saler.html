@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Продавец</title> <!-- название станицы -->
+    <link rel="icon" href="favicon.ico"> <!-- фавиконка -->
+    <link rel="stylesheet" href="null-style.css">
+    <link rel="stylesheet" href="saler/styles/style.css">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-container">
+                <div class="left-container">
+                    <a href="index.html">Главная</a>
+                    <a href="catalog.html">Каталог</a>
+                </div>
+                <div class="logo-container">
+                    ALT+SHARE
+                </div>
+                <div class="right-container">
+                    <a href="./cart.html"><img class="cart-icon" src="./img/cart.svg"></a>
+                    <a href="./account.html"><img class="account-icon" src="./img/account.svg"></a>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="saler-info">
+                <div class="saler-name">
+                    Продавец: <span id="saler-name">Герман Раскумаров</span>
+                </div>
+                <div class="saler-tel">
+                    Контакты: <a href="tel:+74951234567" id="saler-tel">+7(999)234 12-12</a>
+                </div>
+            </div>
+            <div class="tabs">
+                <input type="radio" name="tabs" id="tabone" checked="checked">
+                <label for="tabone">Товары</label>
+                <div class="tab">
+                    <div class="products-wrapper">
+                        <div class="products-container">
+                            <div class="product-item">
+                                <div class="product-background">
+                                    <button class="add-to-cart"><img class="add-to-cart-icon"
+                                            src="./catalog/img/cart.svg"></button>
+                                    <img src="./catalog/img/baikal.png">
+                                </div>
+                                <div class="product-text">
+                                    <a href="./product.html" class="product-name">
+                                        Pink Floyd. The Dark Side Of The Moon
+                                    </a>
+                                    <div class="product-price">
+                                        <span class="price">323</span><span> руб</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-item">
+                                <div class="product-background">
+                                    <button class="add-to-cart"><img class="add-to-cart-icon"
+                                            src="./catalog/img/cart.svg"></button>
+                                    <img src="./catalog/img/baikal.png">
+                                </div>
+                                <div class="product-text">
+                                    <a href="./product.html" class="product-name">
+                                        Синее пальто
+                                    </a>
+                                    <div class="product-price">
+                                        <span class="price">323</span><span> руб</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-item">
+                                <div class="product-background">
+                                    <button class="add-to-cart"><img class="add-to-cart-icon"
+                                            src="./catalog/img/cart.svg"></button>
+                                    <img src="./catalog/img/baikal.png">
+                                </div>
+                                <div class="product-text">
+                                    <a href="./product.html" class="product-name">
+                                        Фотоаппарат Canon powershot G1x </a>
+                                    <div class="product-price">
+                                        <span class="price">323</span><span> руб</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-item">
+                                <div class="product-background">
+                                    <button class="add-to-cart"><img class="add-to-cart-icon"
+                                            src="./catalog/img/cart.svg"></button>
+                                    <img src="./catalog/img/baikal.png">
+                                </div>
+                                <div class="product-text">
+                                    <a href="./product.html" class="product-name">
+                                        Фотоаппарат Canon powershot G1x
+                                    </a>
+                                    <div class="product-price">
+                                        <span class="price">323</span><span> руб</span>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+                <input type="radio" name="tabs" id="tabtwo">
+                <label for="tabtwo">Отзывы</label>
+                <div class="tab">
+                    <div class="review-form">
+                        <form action="#" class=>
+                            <div class="user-details">
+                                <div class="input-box">
+                                    <span class="details">Ваше имя</span>
+                                    <input type="text" id="name" placeholder="Введите свое имя" required>
+                                </div>
+                                <div class="input-box">
+                                    <span class="details">Отзыв</span>
+                                    <textarea rows="5" required id="review-text" placeholder="Напишите свой отзыв"
+                                        name="text"></textarea>
+
+                                </div>
+                                <div class="button">
+                                    <input type="submit" value="Отправить отзыв">
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="review-list-container">
+                        <div class="review-title">Отзывы на продавца</div>
+                        <div class="review-list">
+                            <div class="review-item">
+                                <div class="review-author">
+                                    Виктор Корнеплод
+                                </div>
+                                <div class="review-text">
+                                    Ужасный продавец, договорились встретиться ЗА НЕДЕЛЮ!!! В итоге за 15 минут до
+                                    встречи выясняется, что у продавца появились какие-то неожиданные дела, из-за
+                                    которых он опаздывает... В итоге спустя час ожиданий встретились, товар забрал, но
+                                    больше не хочу иметь дел с этим продавцом... УЖАС!!!
+                                </div>
+                            </div>
+                            <div class="review-item">
+                                <div class="review-author">
+                                    Натуся
+                                </div>
+                                <div class="review-text">
+                                    Заказали мангал за две недели. В назначенный день пригласили людей для разгрузки и
+                                    установки. Прождали доставку до часу ночи, так ничего и не привезли. При этом даже
+                                    не позвонили, после нескольких наших звонков перестали брать трубку.
+                                </div>
+                            </div>
+                            <div class="review-item">
+                                <div class="review-author">
+                                    Виктор Корнеплод
+                                </div>
+                                <div class="review-text">
+                                    Ужасный продавец, договорились встретиться ЗА НЕДЕЛЮ!!! В итоге за 15 минут до
+                                    встречи выясняется, что у продавца появились какие-то неожиданные дела, из-за
+                                    которых он опаздывает... В итоге спустя час ожиданий встретились, товар забрал, но
+                                    больше не хочу иметь дел с этим продавцом... УЖАС!!!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </main>
+        <footer class="footer">
+
+        </footer>
+
+    </div>
+</body>
+
+</html>

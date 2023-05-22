@@ -1,0 +1,222 @@
+@import url(../../header-common.css);
+
+:root {
+    --main-dark-color: rgba(37, 37, 37, 1);
+    --main-color: rgb(218, 150, 134);
+    --main-white-color: rgba(255, 255, 255, 1);
+}
+
+/*подулючаем стиль с хедером и футером*/
+main {
+    font-family: 'Raleway';
+    padding-bottom: 20px;
+}
+
+/*форма регитсрации*/
+.form_container {
+    width: 80%;
+    margin: auto;
+}
+
+.form_container {
+    max-width: 600px;
+    position: relative;
+}
+
+.form {
+    position: relative;
+    max-width: 100%;
+    border: solid 1px black;
+    margin: auto;
+    padding: 20px;
+    z-index: 3;
+    transition: ease 1s;
+}
+
+.product_form {
+    position: relative;
+    max-width: 700px;
+    margin: auto;
+    border-radius: 15px;
+    padding: 10px;
+    z-index: 100;
+}
+
+.form .title {
+    /*стиль для названия*/
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+    position: relative;
+}
+
+/*ввод*/
+.user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.user-details .input-box {
+    margin: 15px auto;
+    width: calc(100% / 2 - 25px);
+}
+
+.input-box input {
+    width: 100%;
+    height: 45px;
+    border: 1px solid black;
+    padding: 3px;
+    transition: all 0.3s ease;
+}
+
+.user-details .input-box input:focus {
+    border-color: var(--main-color);
+}
+
+form .button {
+    height: 45px;
+    width: 100%;
+    margin: auto;
+    margin-top: 15px;
+}
+
+form .button input {
+    height: 100%;
+    width: 100%;
+    font-weight: 300;
+    font-size: 16px;
+    color: white;
+    background-color: var(--main-color);
+    background-size: 400% 400%;
+    animation: gradient 20s ease infinite;
+}
+
+form .button input:active {
+    opacity: 90%;
+}
+
+.input-box {
+    position: relative;
+}
+
+.show-password {
+    position: absolute;
+    right: 10px;
+    top: 25px;
+    font-size: 20px;
+    background-color: transparent;
+    color: var(--main-color);
+}
+
+.login-page {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 12px;
+}
+
+.user-details .input-box {
+    margin-bottom: 0px;
+    width: calc(100%);
+}
+
+textarea {
+    resize: none;
+    border: 1px solid black;
+    margin-top: 3px;
+    width: 100%;
+    padding: 3px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+textarea:focus{
+    border: 1px solid var(--main-color);
+}
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    transition: 3.s;
+    left: -9999px;
+}
+
+[type="radio"]:checked+label,
+[type="radio"]:not(:checked)+label {
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 23px;
+    display: inline-block;
+    transition: 3.s;
+}
+
+[type="radio"]:checked+label:before,
+[type="radio"]:not(:checked)+label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid rgba(0, 0, 0, 0.448);
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+input[type="radio"]:checked+label::before {
+    border: 6px solid var(--main-color);
+    transition: 3.s;
+}
+
+.input-file-container {
+    position: relative;
+    width: fit-content;
+}
+
+.input-file-trigger {
+    display: block;
+    padding: 14px 45px;
+    border: 1px solid black;
+    color: var(--main-dark-color);
+    transition: all .4s;
+    cursor: pointer;
+}
+
+.input-file {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    padding: 14px 0;
+    cursor: pointer;
+}
+
+.input-file:hover+.input-file-trigger,
+.input-file:focus+.input-file-trigger,
+.input-file-trigger:hover,
+.input-file-trigger:focus {
+    background-color: rgba(0, 0, 0, 0.026);
+}
+
+.file-return {
+    margin: 0;
+}
+
+.file-return:not(:empty) {
+    margin: 1em 0;
+}
+
+.file-return {
+    font-style: italic;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.file-return:not(:empty):before {
+    content: "Выбранный файл: ";
+    font-style: normal;
+    font-weight: normal;
+}
